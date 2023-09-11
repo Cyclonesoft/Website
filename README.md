@@ -32,7 +32,7 @@ Este proyecto se desarrolló con lo siguiente:
    ```bash
    npm run prod # compila archivos de cliente y servidor en modo de producción y ejecuta el servidor
    ```
-2. Visita `http://[ip address of machine]` en un navegador web (corre en el puerto 80)
+2. Visita `http://[ip de tu maquina]` en un navegador web (corre en el puerto 80)
 
 Si desea ejecutar este servidor web a través de systemd, el script`start.sh` debería ayudar en esto, suponiendo que esté usando NVM para administrar las versiones de Node.
 
@@ -41,7 +41,7 @@ Si desea ejecutar este servidor web a través de systemd, el script`start.sh` de
    ```bash
    npm start # compila archivos del cliente, compila archivos del servidor en la memoria, inicia el servidor con nodemon (se reinicia al cambiar el archivo)
    ```
-2. Visita `http://[ip address of machine]:3000` en un navegador web(corre en el puerto 3000)
+2. Visita `http://[ip de tu maquina]:3000` en un navegador web(corre en el puerto 3000)
 
 # Descargar Patrones
 Cualquier archivo`.thr` es compatible con la mesa Sisyphus funcionará con este software. Puede encontrar una colección de patrones disponibles públicamente en los siguientes enlaces:
