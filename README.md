@@ -1,49 +1,50 @@
-<h1>Webserver</h1>
-<h3>A NodeJS webserver with ReactJS and Bootstrap for controlling your sand table remotely</h3>
+<h1>Webserver Mesa de arena kinetica</h1>
+<h3>Un servidor web NodeJS con ReactJS y Bootstrap para controlar su mesa de arena de forma remota</h3>
 
 Designed by Ravi Dudhagra ([@rdudhagra](https://github.com/rdudhagra))
+Modificado y tradaducido por Diego Ruiz ([@druiz](https://github.com/Cyclonesoft/))
 
-- [Installation Instructions](#installation-instructions)
-  - [Prerequisites](#prerequisites)
-  - [Building](#building)
-  - [Running the webserver](#running-the-webserver)
-  - [Running the webserver (development)](#running-the-webserver-development)
-- [Downloading tracks](#downloading-tracks)
+- [Instrucciones de Instalación](#installation-instructions)
+  - [Prerequisitos](#prerequisites)
+  - [Costrucción](#building)
+  - [Ejecutar el Webserver](#running-the-webserver)
+  - [Ejecutar el Webserver (development)](#running-the-webserver-development)
+- [Descargar Patrones](#downloading-tracks)
 - [Screenshots](#screenshots)
 
-# Installation Instructions
+# Instrucciones de Instalación
 
-## Prerequisites
-This project was developed with the following:
+## Prerequisitos
+Este proyecto se desarrolló con lo siguiente:
 - `NodeJS v13.11.0`
 - `NPM v6.14.5`
 
-## Building
-1. Download this folder to the directory of choice
-2. In the same directory as `package.json`, run
+## Costrucción
+1. Descargue esta carpeta al directorio que prefieras
+2. En el mismo directorio de `package.json`, ejecuta
    ```bash
-   npm install # installs packages and dependencies
+   npm install # instala paquetes y dependencias
    ```
-3. In the file `.env`, edit the parameters to match your setup
+3. En el archivo `.env`, Edite los parámetros para que coincidan con su configuración.
 
-## Running the webserver
-1. In the same directory as `package.json`, run
+## Ejecutar el Webserver
+1. En el mismo directorio de `package.json`, ejecuta
    ```bash
-   npm run prod # compiles client and server files in production mode, and runs server
+   npm run prod # compila archivos de cliente y servidor en modo de producción y ejecuta el servidor
    ```
-2. Visit `http://[ip address of machine]` in a web browser (runs on port 80)
+2. Visita `http://[ip address of machine]` en un navegador web (corre en el puerto 80)
 
-If you want to run this webserver through systemd, the script `start.sh` should assist in this, assuming you're using NVM to manage Node versions.
+Si desea ejecutar este servidor web a través de systemd, el script`start.sh` debería ayudar en esto, suponiendo que esté usando NVM para administrar las versiones de Node.
 
-## Running the webserver (development)
-1. In the same directory as `package.json`, run
+## Ejecutar el Weserver (development)
+1. En el mismo directorio de `package.json`, ejecuta
    ```bash
-   npm start # compiles client files, compiles server files in memory, starts server with nodemon (restarts on file changes)
+   npm start # compila archivos del cliente, compila archivos del servidor en la memoria, inicia el servidor con nodemon (se reinicia al cambiar el archivo)
    ```
-2. Visit `http://[ip address of machine]:3000` in a web browser (runs on port 3000)
+2. Visita `http://[ip address of machine]:3000` en un navegador web(corre en el puerto 3000)
 
-# Downloading tracks
-Any `.thr` file compatible with the Sisyphus table will work with this software. A collection of publicly available tracks can be found at the following links:
+# Descargar Patrones
+Cualquier archivo`.thr` es compatible con la mesa Sisyphus funcionará con este software. Puede encontrar una colección de patrones disponibles públicamente en los siguientes enlaces:
 - https://github.com/Dithermaster/sisyphus
 - https://github.com/SlightlyLoony/JSisyphus
 - https://github.com/heropup/sisyphus
